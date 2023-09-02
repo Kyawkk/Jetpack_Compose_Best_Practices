@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="deploymentTargetDropDown">
+    <value>
+      <entry key="amphibians">
+        <State />
+      </entry>
+      <entry key="app">
+        <State />
+      </entry>
+      <entry key="cmdownloadlinkgenerator">
+        <State />
+      </entry>
+      <entry key="marsphoto">
+        <State />
+      </entry>
+      <entry key="mycity">
+        <State />
+      </entry>
+      <entry key="networkMarsPhotosRepository_getMarsPhotos_verifyPhotoList()">
+        <State />
+      </entry>
+      <entry key="racetracker">
+        <State />
+      </entry>
+      <entry key="sport">
+        <State />
+      </entry>
+    </value>
+  </component>
+</project>
