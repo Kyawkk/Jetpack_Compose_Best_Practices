@@ -11,7 +11,19 @@
       <entry key="bookshelf">
         <State />
       </entry>
+      <entry key="busschedule">
+        <State />
+      </entry>
       <entry key="cmdownloadlinkgenerator">
+        <State />
+      </entry>
+      <entry key="datastoreexample">
+        <State />
+      </entry>
+      <entry key="inventory">
+        <State />
+      </entry>
+      <entry key="inventoryapp">
         <State />
       </entry>
       <entry key="marsphoto">
@@ -26,7 +38,13 @@
       <entry key="racetracker">
         <State />
       </entry>
+      <entry key="refreshratechanger">
+        <State />
+      </entry>
       <entry key="sport">
+        <State />
+      </entry>
+      <entry key="sqlexample">
         <State />
       </entry>
     </value>

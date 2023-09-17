@@ -12,11 +12,17 @@
             <option value="$PROJECT_DIR$/amphibians" />
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/bookshelf" />
+            <option value="$PROJECT_DIR$/busschedule" />
             <option value="$PROJECT_DIR$/cmdownloadlinkgenerator" />
+            <option value="$PROJECT_DIR$/datastoreexample" />
+            <option value="$PROJECT_DIR$/inventory" />
+            <option value="$PROJECT_DIR$/inventoryapp" />
             <option value="$PROJECT_DIR$/marsphoto" />
             <option value="$PROJECT_DIR$/mycity" />
             <option value="$PROJECT_DIR$/racetracker" />
+            <option value="$PROJECT_DIR$/refreshratechanger" />
             <option value="$PROJECT_DIR$/sport" />
+            <option value="$PROJECT_DIR$/sqlexample" />
           </set>
         </option>
       </GradleProjectSettings>
