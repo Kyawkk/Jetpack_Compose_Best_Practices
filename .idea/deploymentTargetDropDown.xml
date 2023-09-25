@@ -8,6 +8,9 @@
       <entry key="app">
         <State />
       </entry>
+      <entry key="blur-o-matic">
+        <State />
+      </entry>
       <entry key="bookshelf">
         <State />
       </entry>
@@ -26,16 +29,10 @@
       <entry key="inventory">
         <State />
       </entry>
-      <entry key="inventoryapp">
-        <State />
-      </entry>
       <entry key="marsphoto">
         <State />
       </entry>
       <entry key="mycity">
-        <State />
-      </entry>
-      <entry key="networkMarsPhotosRepository_getMarsPhotos_verifyPhotoList()">
         <State />
       </entry>
       <entry key="racetracker">
