@@ -2,14 +2,15 @@
 plugins {
     alias(libs.plugins.androidApplication)
     alias(libs.plugins.kotlinAndroid)
+    id("kotlin-parcelize")
 }
 
 android {
-    namespace = "com.example.bluromatic"
+    namespace = "com.example.waterme"
     compileSdk = 33
 
     defaultConfig {
-        applicationId = "com.example.bluromatic"
+        applicationId = "com.example.waterme"
         minSdk = 24
         targetSdk = 33
         versionCode = 1
@@ -56,12 +57,6 @@ dependencies {
     val lifecycle_version = "2.6.1"
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:$lifecycle_version")
     implementation ("androidx.lifecycle:lifecycle-livedata-ktx:$lifecycle_version")
-    // Espresso
-    androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
-    // Junit
-    androidTestImplementation("androidx.test.ext:junit:1.1.5")
-    // Work testing
-    androidTestImplementation("androidx.work:work-testing:2.8.1")
 
     implementation(libs.core.ktx)
     implementation(libs.lifecycle.runtime.ktx)

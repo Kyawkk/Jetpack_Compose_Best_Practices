@@ -2,6 +2,9 @@
 <project version="4">
   <component name="deploymentTargetDropDown">
     <value>
+      <entry key="WorkerInstrumentationTest">
+        <State />
+      </entry>
       <entry key="amphibians">
         <State />
       </entry>
@@ -45,6 +48,9 @@
         <State />
       </entry>
       <entry key="sqlexample">
+        <State />
+      </entry>
+      <entry key="waterme">
         <State />
       </entry>
     </value>

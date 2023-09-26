@@ -19,39 +19,31 @@ import com.example.bluromatic.workers.BlurWorker
 import com.example.bluromatic.workers.CleanupWorker
 import com.example.bluromatic.workers.SaveImageToFileWorker
 import kotlinx.coroutines.flow.Flow
-import kotlinx.coroutines.flow.MutableStateFlow
 import kotlinx.coroutines.flow.mapNotNull
 
 class WorkManagerBluromaticRepository(context: Context) : BluromaticRepository {
     private val workManager = WorkManager.getInstance(context)
     private val imageUri = context.getImageUri()
-    override val outputWorkInfo: Flow<WorkInfo> = workManager
-        .getWorkInfosByTagLiveData(TAG_OUTPUT)
-        .asFlow()
-        .mapNotNull {
-            if (it.isNotEmpty()) it.first() else null
-        }
+    override val outputWorkInfo: Flow<WorkInfo> =
+        workManager.getWorkInfosByTagLiveData(TAG_OUTPUT).asFlow().mapNotNull {
+                if (it.isNotEmpty()) it.first() else null
+            }
 
     override fun applyBlur(blurLevel: Int) {
-        var continuation = workManager
-            .beginUniqueWork(
+        var continuation = workManager.beginUniqueWork(
                 IMAGE_MANIPULATION_WORK_NAME,
                 ExistingWorkPolicy.REPLACE,
                 OneTimeWorkRequest.from(CleanupWorker::class.java)
             )
 
-        val constraints = Constraints.Builder()
-            .setRequiresBatteryNotLow(true)
-            .build()
-        
+        val constraints = Constraints.Builder().setRequiresBatteryNotLow(true).build()
+
         val blurBuilder = OneTimeWorkRequestBuilder<BlurWorker>()
-        val save = OneTimeWorkRequestBuilder<SaveImageToFileWorker>()
-            .addTag(TAG_OUTPUT)
+        val save = OneTimeWorkRequestBuilder<SaveImageToFileWorker>().addTag(TAG_OUTPUT)
 
         blurBuilder.setInputData(
             createInputDataForWorkRequest(
-                imageUri = imageUri,
-                blurLevel = blurLevel
+                imageUri = imageUri, blurLevel = blurLevel
             )
         )
         blurBuilder.setConstraints(constraints)
